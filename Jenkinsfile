@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('Git Checkout'){
             steps {
-                git branch: 'main', credentialsId: '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', url: 'https://github.com/ShaliniVaibhav/test'
+                git url: 'https://github.com/ShaliniVaibhav/test'
             }
         }
         
