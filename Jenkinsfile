@@ -1,9 +1,15 @@
 pipeline{
-    agent any
+//    agent any
     
-    tools {
-        terraform 'terraform-1008'
-    }
+//    tools {
+//        terraform 'terraform-1008'
+//    }
+    
+    agent  any
+        options {
+                timestamps ()
+                ansiColor('xterm')
+            }
     
     stages{
         stage('Git Checkout'){
