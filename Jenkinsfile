@@ -8,7 +8,7 @@ pipeline{
     agent  any
         options {
                 timestamps ()
-                terraform 'terraform'
+  //              terraform 'terraform'
   //              ansiColor('xterm')
             }
     
