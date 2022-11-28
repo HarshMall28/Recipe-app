@@ -14,7 +14,7 @@ pipeline{
     stages{
         stage('Git Checkout'){
             steps {
-                git url: 'https://github.com/ShaliniVaibhav/test'
+                git branch: 'main', credentialsId: '5a675c1b-611d-4b66-bf29-e47896e1e717', url: 'https://github.com/ShaliniVaibhav/test'
             }
         }
         
