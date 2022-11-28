@@ -51,6 +51,8 @@ pipeline{
 
         stage('Apply') {
             steps {
+                echo "Terraform action from the parameter is --->${action}"
+                sh label: '',script: 'terraform ${action} --auto-approve'
                 sh "pwd;cd terraform/aws-instance-first-script ; terraform apply -input=false tfplan"
             }
         }
