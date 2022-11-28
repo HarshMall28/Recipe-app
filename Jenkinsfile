@@ -1,9 +1,9 @@
 pipeline{
 //    agent any
     
-    tools {
-        terraform 'terraform-1008'
-    }
+//    tools {
+//        terraform 'terraform-1008'
+//    }
     
     agent  any
         options {
