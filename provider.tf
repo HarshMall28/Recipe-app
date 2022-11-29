@@ -1,6 +1,8 @@
 provider "aws" {
-  region = "eu-west-1"
-}
+  region = "eu-west-1",
+  access_key = "AKIAT3YXLKUG4Z62OUZT",
+  secret_key = "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"
+} 
 
 resource "aws_instance" "AWS-instance" {
   count 	= 1 
