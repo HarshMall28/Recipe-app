@@ -15,7 +15,7 @@ pipeline{
     stages{
         stage('Git Checkout'){
             steps {
-                git branch: 'main', credentialsId: '61c00e8a-11c0-4f33-bc1e-f2673b2a57c8', url: 'https://github.com/HarshMall28/devopstest'
+                git branch: 'main', credentialsId: '46095236-016d-4423-a1f6-7788c4d0f414', url: 'https://github.com/HarshMall28/devopstest'
             }
         }
         
